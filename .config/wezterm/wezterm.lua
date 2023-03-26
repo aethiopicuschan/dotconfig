@@ -1,19 +1,11 @@
 local wezterm = require 'wezterm'
 
-wezterm.font("FiraCode NF", { weight = "Regular", stretch = "Normal", style = "Normal" })
-wezterm.font("FiraCode NF", { weight = "DemiBold", stretch = "Normal", style = "Normal" })
 wezterm.font("FiraCode Nerd Font", { weight = "Light", stretch = "Normal", style = "Normal" })
 wezterm.font("FiraCode Nerd Font", { weight = "Regular", stretch = "Normal", style = "Normal" })
 wezterm.font("FiraCode Nerd Font", { weight = 450, stretch = "Normal", style = "Normal" })
 wezterm.font("FiraCode Nerd Font", { weight = "Medium", stretch = "Normal", style = "Normal" })
 wezterm.font("FiraCode Nerd Font", { weight = "DemiBold", stretch = "Normal", style = "Normal" })
 wezterm.font("FiraCode Nerd Font", { weight = "Bold", stretch = "Normal", style = "Normal" })
-wezterm.font("FiraCode Nerd Font Mono", { weight = "Light", stretch = "Normal", style = "Normal" })
-wezterm.font("FiraCode Nerd Font Mono", { weight = "Regular", stretch = "Normal", style = "Normal" })
-wezterm.font("FiraCode Nerd Font Mono", { weight = 450, stretch = "Normal", style = "Normal" })
-wezterm.font("FiraCode Nerd Font Mono", { weight = "Medium", stretch = "Normal", style = "Normal" })
-wezterm.font("FiraCode Nerd Font Mono", { weight = "DemiBold", stretch = "Normal", style = "Normal" })
-wezterm.font("FiraCode Nerd Font Mono", { weight = "Bold", stretch = "Normal", style = "Normal" })
 
 return {
     window_close_confirmation = "NeverPrompt",

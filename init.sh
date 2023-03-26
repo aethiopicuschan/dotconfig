@@ -56,6 +56,12 @@ chsh -s /usr/local/bin/fish
 # peco
 brew install peco
 
+#### フォントのインストール ####
+
+# FiraCode Nerd Font
+brew tap homebrew/cask-fonts
+brew install font-fira-nerd-font
+
 #### アプリのインストール ####
 
 # 1Password
