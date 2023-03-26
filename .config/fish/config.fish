@@ -1,8 +1,8 @@
 # homebrew
-/opt/homebrew/bin/brew shellenv | source
+eval "$(/opt/homebrew/bin/brew shellenv)"
 
 # starship
-starship init fish | source
+eval "$(starship init fish)"
 
 # WeZTerm
 set -gx PATH /Applications/WezTerm.app/Contents/MacOS $PATH
@@ -15,10 +15,13 @@ set -gx LSCOLORS "Gxfxcxdxbxegedabagacad"
 alias ls='ls -a --color=auto'
 
 # Python
-set -gx PYENV_ROOT $HOME/.pyenv
-set -gx PATH $PYENV_ROOT/shims $PATH
-set -gx PATH $HOME/.local/bin $PATH
+eval "$(pyenv init -)"
 set -gx PYTHONDONTWRITEBYTECODE 1
 
 # Node.js
-set -gx PATH $HOME/.nodebrew/current/bin $PATH
+eval "$(nodenv init -)"
+
+# キーバインド
+function fish_user_key_bindings
+  bind \cr peco_select_history
+end

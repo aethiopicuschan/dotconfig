@@ -1,5 +1,4 @@
 local wezterm = require 'wezterm'
-local mux = wezterm.mux
 
 wezterm.font("FiraCode NF", { weight = "Regular", stretch = "Normal", style = "Normal" })
 wezterm.font("FiraCode NF", { weight = "DemiBold", stretch = "Normal", style = "Normal" })
@@ -16,13 +15,8 @@ wezterm.font("FiraCode Nerd Font Mono", { weight = "Medium", stretch = "Normal",
 wezterm.font("FiraCode Nerd Font Mono", { weight = "DemiBold", stretch = "Normal", style = "Normal" })
 wezterm.font("FiraCode Nerd Font Mono", { weight = "Bold", stretch = "Normal", style = "Normal" })
 
-wezterm.on("gui-startup", function()
-    local tab, pane, window = mux.spawn_window {}
-    window:gui_window():maximize()
-end)
-
-
 return {
+    window_close_confirmation = "NeverPrompt",
     colors = {
         scrollbar_thumb = '#008dd8',
         cursor_fg = 'white',
@@ -56,6 +50,15 @@ return {
         {
             regex = [[\b\w+://(?:[\d]{1,3}\.){3}[\d]{1,3}\S*\b]],
             format = '$0',
+        },
+    },
+    keys = {
+        {
+            key = 'w',
+            mods = 'CTRL',
+            action = wezterm.action_callback(function(win, pane)
+                win:maximize()
+            end),
         },
     },
 }
