@@ -25,6 +25,10 @@ defaults write com.apple.screencapture show-thumbnail -bool false
 # 反映させる
 killall Finder
 killall SystemUIServer
+# TouchIdでsudoを使えるようにする
+sudo chmod +w /etc/pam.d/sudo
+echo "auth       sufficient     pam_tid.so" | sudo tee -a /etc/pam.d/sudo
+sudo chmod -w /etc/pam.d/sudo
 
 #### ツールのインストール ####
 # Homebrew
