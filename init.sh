@@ -42,6 +42,9 @@ brew install git
 # wget
 brew install wget
 
+# GNU grep
+brew install grep
+
 # coreutils
 brew install coreutils
 

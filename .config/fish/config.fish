@@ -7,8 +7,9 @@ eval "$(starship init fish)"
 # WeZTerm
 set -gx PATH /Applications/WezTerm.app/Contents/MacOS $PATH
 
-# coreutils
-set -gx PATH /usr/local/opt/coreutils/libexec/gnubin $PATH
+# GNU系ツール
+set -gx PATH /opt/homebrew/opt/coreutils/libexec/gnubin $PATH
+set -gx PATH /opt/homebrew/opt/grep/libexec/gnubin $PATH
 
 # ls
 set -gx LSCOLORS "Gxfxcxdxbxegedabagacad"
