@@ -17,7 +17,14 @@ defaults write com.apple.dock autohide-time-modifier -float 0.0
 defaults write com.apple.finder AppleShowAllFiles TRUE
 # スペルの訂正を無効にする
 defaults write -g NSAutomaticSpellingCorrectionEnabled -bool false
+# スクリーンショット関連
+mkdir $HOME/ScreenShot
+defaults write com.apple.screencapture location $HOME/ScreenShot
+defaults write com.apple.screencapture name ScreenShot
+defaults write com.apple.screencapture show-thumbnail -bool false
+# 反映させる
 killall Finder
+killall SystemUIServer
 
 #### ツールのインストール ####
 # Homebrew
