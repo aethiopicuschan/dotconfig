@@ -17,6 +17,8 @@ alias ls='ls -a --color=auto'
 # Python
 eval "$(pyenv init -)"
 set -gx PYTHONDONTWRITEBYTECODE 1
+# poetry
+set -gx PATH $HOME/.local/bin $PATH
 
 # Node.js
 eval "$(nodenv init -)"
