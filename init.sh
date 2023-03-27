@@ -22,6 +22,8 @@ mkdir $HOME/ScreenShot
 defaults write com.apple.screencapture location $HOME/ScreenShot
 defaults write com.apple.screencapture name ScreenShot
 defaults write com.apple.screencapture show-thumbnail -bool false
+# スクロール方向
+defaults write NSGlobalDomain com.apple.swipescrolldirection -bool false
 # 反映させる
 killall Finder
 killall SystemUIServer
@@ -38,6 +40,13 @@ brew update
 
 # Git
 brew install git
+
+# gpg
+brew install gpg
+brew install pinentry-mac
+brew tap jorgelbg/tap
+brew install pinentry-touchid
+defaults write org.gpgtools.common DisableKeychain -bool yes
 
 # wget
 brew install wget

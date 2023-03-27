@@ -10,6 +10,7 @@ set -gx PATH /Applications/WezTerm.app/Contents/MacOS $PATH
 # GNU系ツール
 set -gx PATH /opt/homebrew/opt/coreutils/libexec/gnubin $PATH
 set -gx PATH /opt/homebrew/opt/grep/libexec/gnubin $PATH
+set -gx GPG_TTY $(tty)
 
 # ls
 set -gx LSCOLORS "Gxfxcxdxbxegedabagacad"
