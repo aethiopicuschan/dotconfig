@@ -68,6 +68,9 @@ chsh -s "$(which fish)"
 # peco
 brew install peco
 
+# mas
+brew install mas
+
 #### フォントのインストール ####
 
 # FiraCode Nerd Font
@@ -93,6 +96,10 @@ brew install --cask visual-studio-code
 
 # ATOK
 brew install --cask atok
+
+# LINE
+# AppStoreのGUIでサインインしてからでないとエラーになる可能性がある。 see https://github.com/mas-cli/mas/issues/417
+mas install 539883307
 
 #### 言語のインストール ####
 
