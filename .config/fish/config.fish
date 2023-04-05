@@ -25,6 +25,9 @@ set -gx PATH $HOME/.local/bin $PATH
 # Node.js
 eval "$(nodenv init -)"
 
+# Rust
+set -gx PATH $HOME/.cargo/bin $PATH
+
 # キーバインド
 function fish_user_key_bindings
   bind \cr peco_select_history

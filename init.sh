@@ -115,3 +115,6 @@ brew install nodenv
 eval "$(nodenv init -)"
 nodenv install $node_ver
 nodenv global $node_ver
+
+# Rust
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
