@@ -71,6 +71,9 @@ brew install peco
 # mas
 brew install mas
 
+# jq
+brew install jq
+
 #### フォントのインストール ####
 
 # FiraCode Nerd Font
