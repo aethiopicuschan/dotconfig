@@ -104,6 +104,9 @@ brew install --cask atok
 # AppStoreのGUIでサインインしてからでないとエラーになる可能性がある。 see https://github.com/mas-cli/mas/issues/417
 mas install 539883307
 
+# Slack
+brew install --cask slack
+
 #### 言語のインストール ####
 
 # Python
