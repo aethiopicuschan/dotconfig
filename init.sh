@@ -1,7 +1,5 @@
 #!/bin/bash
 
-# Pythonのバージョン (3だとlatestになる)
-python_ver=3
 # Node.jsのバージョン
 node_ver=19.8.1
 
@@ -109,12 +107,8 @@ brew install --cask slack
 
 #### 言語のインストール ####
 
-# Python
-brew install pyenv
-pyenv install $python_ver
-pyenv global $python_ver
-curl -sSL https://install.python-poetry.org | python
-poetry config virtualenvs.in-project true
+# Python (というよりもrye)
+curl -sSf https://rye-up.com/get | bash
 
 # Node.js
 brew install nodenv

@@ -17,10 +17,9 @@ set -gx LSCOLORS "Gxfxcxdxbxegedabagacad"
 alias ls='ls -a --color=auto'
 
 # Python
-eval "$(pyenv init -)"
 set -gx PYTHONDONTWRITEBYTECODE 1
-# poetry
-set -gx PATH $HOME/.local/bin $PATH
+# rye
+set -gx PATH $HOME/.rye/shims $PATH
 
 # Node.js
 eval "$(nodenv init -)"
