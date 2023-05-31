@@ -52,6 +52,9 @@ brew install wget
 # GNU grep
 brew install grep
 
+# GNU sed
+brew install gnu-sed
+
 # coreutils
 brew install coreutils
 
