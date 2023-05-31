@@ -108,6 +108,9 @@ mas install 539883307
 # Slack
 brew install --cask slack
 
+# Authy
+brew install --cask authy
+
 #### 言語のインストール ####
 
 # Python (というよりもrye)
