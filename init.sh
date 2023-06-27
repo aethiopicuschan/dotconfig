@@ -72,6 +72,9 @@ brew install mas
 # jq
 brew install jq
 
+# ffmpeg
+brew install ffmpeg
+
 #### フォントのインストール ####
 
 # FiraCode Nerd Font
