@@ -78,6 +78,9 @@ brew install jq
 # ffmpeg
 brew install ffmpeg
 
+# AWS CLI
+brew install awscli
+
 #### フォントのインストール ####
 
 # FiraCode Nerd Font
