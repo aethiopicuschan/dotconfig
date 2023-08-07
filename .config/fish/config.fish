@@ -23,7 +23,10 @@ set -gx PYTHONDONTWRITEBYTECODE 1
 set -gx PATH $HOME/.rye/shims $PATH
 
 # Node.js
-eval "$(nodenv init -)"
+set -gx PNPM_HOME "/Users/aethiopicuschan/Library/pnpm"
+if not string match -q -- $PNPM_HOME $PATH
+  set -gx PATH "$PNPM_HOME" $PATH
+end
 
 # Rust
 set -gx PATH $HOME/.cargo/bin $PATH

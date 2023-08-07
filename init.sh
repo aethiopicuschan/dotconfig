@@ -1,8 +1,5 @@
 #!/bin/bash
 
-# Node.jsのバージョン
-node_ver=19.8.1
-
 #### Mac自体の設定 ####
 # .DS_Storeを作らない
 defaults write com.apple.desktopservices DSDontWriteNetworkStores True
@@ -122,11 +119,9 @@ brew install --cask authy
 # Python (というよりもrye)
 curl -sSf https://rye-up.com/get | bash
 
-# Node.js
-brew install nodenv
-eval "$(nodenv init -)"
-nodenv install $node_ver
-nodenv global $node_ver
+# Node.js with pnpm
+curl -fsSL https://get.pnpm.io/install.sh | sh -
+~/Library/pnpm/pnpm env use --global latest
 
 # Rust
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
