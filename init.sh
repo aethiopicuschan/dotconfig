@@ -125,3 +125,6 @@ curl -fsSL https://get.pnpm.io/install.sh | sh -
 
 # Rust
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+
+# Go
+brew install go
