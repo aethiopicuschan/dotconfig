@@ -31,6 +31,11 @@ end
 # Rust
 set -gx PATH $HOME/.cargo/bin $PATH
 
+# Go
+set -gx GOPATH $HOME/go
+set -gx GOBIN $GOPATH/bin
+set -gx PATH $GOBIN $PATH
+
 # キーバインド
 function fish_user_key_bindings
   bind \cr peco_select_history
