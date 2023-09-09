@@ -32,6 +32,7 @@ end
 set -gx PATH $HOME/.cargo/bin $PATH
 
 # Go
+set -gx GOPRIVATE "github.com/aethiopicuschan"
 set -gx GOPATH $HOME/go
 set -gx GOBIN $GOPATH/bin
 set -gx PATH $GOBIN $PATH
