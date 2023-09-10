@@ -78,6 +78,9 @@ brew install ffmpeg
 # AWS CLI
 brew install awscli
 
+# Hugo
+brew install hugo
+
 #### フォントのインストール ####
 
 # FiraCode Nerd Font
