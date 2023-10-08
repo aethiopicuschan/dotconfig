@@ -81,6 +81,9 @@ brew install awscli
 # Hugo
 brew install hugo
 
+# pre-commit
+brew install pre-commit
+
 #### フォントのインストール ####
 
 # FiraCode Nerd Font
