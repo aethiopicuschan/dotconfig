@@ -55,6 +55,9 @@ brew install gnu-sed
 # coreutils
 brew install coreutils
 
+# curl
+brew install curl
+
 # Starship
 brew install starship
 

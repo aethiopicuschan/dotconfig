@@ -17,6 +17,9 @@ set -gx GPG_TTY $(tty)
 set -gx LSCOLORS "Gxfxcxdxbxegedabagacad"
 alias ls='ls -a --color=auto'
 
+# curl
+set -gx PATH /opt/homebrew/opt/curl/bin $PATH
+
 # Python
 set -gx PYTHONDONTWRITEBYTECODE 1
 # rye
