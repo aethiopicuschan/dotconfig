@@ -5,12 +5,12 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 eval "$(starship init fish)"
 
 # WeZTerm
-set -gx PATH /Applications/WezTerm.app/Contents/MacOS $PATH
+fish_add_path /Applications/WezTerm.app/Contents/MacOS
 
 # GNU系ツール
-set -gx PATH /opt/homebrew/opt/coreutils/libexec/gnubin $PATH
-set -gx PATH /opt/homebrew/opt/grep/libexec/gnubin $PATH
-set -gx PATH /opt/homebrew/opt/gnu-sed/libexec/gnubin $PATH
+fish_add_path /opt/homebrew/opt/coreutils/libexec/gnubin
+fish_add_path /opt/homebrew/opt/grep/libexec/gnubin
+fish_add_path /opt/homebrew/opt/gnu-sed/libexec/gnubin
 set -gx GPG_TTY $(tty)
 
 # ls
@@ -18,27 +18,27 @@ set -gx LSCOLORS "Gxfxcxdxbxegedabagacad"
 alias ls='ls -a --color=auto'
 
 # curl
-set -gx PATH /opt/homebrew/opt/curl/bin $PATH
+fish_add_path /opt/homebrew/opt/curl/bin
 
 # Python
 set -gx PYTHONDONTWRITEBYTECODE 1
 # rye
-set -gx PATH $HOME/.rye/shims $PATH
+fish_add_path $HOME/.rye/shims
 
 # Node.js
 set -gx PNPM_HOME "/Users/aethiopicuschan/Library/pnpm"
 if not string match -q -- $PNPM_HOME $PATH
-  set -gx PATH "$PNPM_HOME" $PATH
+  fish_add_path "$PNPM_HOME"
 end
 
 # Rust
-set -gx PATH $HOME/.cargo/bin $PATH
+fish_add_path $HOME/.cargo/bin
 
 # Go
 set -gx GOPRIVATE "github.com/aethiopicuschan"
 set -gx GOPATH $HOME/go
 set -gx GOBIN $GOPATH/bin
-set -gx PATH $GOBIN $PATH
+fish_add_path $GOBIN
 
 # キーバインド
 function fish_user_key_bindings
