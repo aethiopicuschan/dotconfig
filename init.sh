@@ -61,6 +61,9 @@ brew install curl
 # unzip
 brew install unzip
 
+# act
+brew install act
+
 # Starship
 brew install starship
 
