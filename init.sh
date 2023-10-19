@@ -58,6 +58,9 @@ brew install coreutils
 # curl
 brew install curl
 
+# unzip
+brew install unzip
+
 # Starship
 brew install starship
 

@@ -1,8 +1,9 @@
-# homebrew
-eval "$(/opt/homebrew/bin/brew shellenv)"
-
-# starship
-eval "$(starship init fish)"
+if status is-interactive
+  # homebrew
+  eval "$(/opt/homebrew/bin/brew shellenv)"
+  # starship
+  eval "$(starship init fish)"
+end
 
 # WeZTerm
 fish_add_path /Applications/WezTerm.app/Contents/MacOS
@@ -19,6 +20,9 @@ alias ls='ls -a --color=auto'
 
 # curl
 fish_add_path /opt/homebrew/opt/curl/bin
+
+# unzip
+fish_add_path /opt/homebrew/opt/unzip/bin
 
 # Python
 set -gx PYTHONDONTWRITEBYTECODE 1
