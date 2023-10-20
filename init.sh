@@ -103,6 +103,7 @@ brew install font-fira-nerd-font
 
 # 1Password
 brew install --cask 1password
+brew install 1password-cli
 
 # Chrome
 brew install google-chrome
