@@ -140,7 +140,7 @@ curl -fsSL https://get.pnpm.io/install.sh | sh -
 ~/Library/pnpm/pnpm env use --global latest
 
 # Rust
-curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+brew install rust
 
 # Go
 brew install go
