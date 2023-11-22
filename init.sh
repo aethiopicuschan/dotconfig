@@ -36,6 +36,9 @@ brew update
 # Git
 brew install git
 
+# GitHub
+brew install gh
+
 # gpg
 brew install gpg
 brew install pinentry-mac
